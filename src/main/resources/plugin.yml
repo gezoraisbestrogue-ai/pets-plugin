@@ -1,0 +1,17 @@
+name: Pets
+version: '${project.version}'
+main: com.example.pets.PetsPlugin
+api-version: '1.21'
+author: YourName
+description: Lets players have a personal tamed pet (wolf, cat, or parrot).
+
+commands:
+  pet:
+    description: Manage your pet.
+    usage: /pet <summon|dismiss|name|tp|list> [args]
+    permission: pets.use
+
+permissions:
+  pets.use:
+    description: Allows using the /pet command.
+    default: true
